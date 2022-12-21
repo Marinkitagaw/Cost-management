@@ -27,19 +27,23 @@ export default [
     component: './Dashboard',
   },
   {
-    path: '/admin',
-    name: 'admin',
+    path: '/cost',
+    name: '成本管理',
     icon: 'crown',
-    access: 'canAdmin',
     routes: [
       {
-        path: '/admin',
-        redirect: '/admin/sub-page',
+        path: '/cost/agreement',
+        name: '合同管理',
+        component: './CostManage/Agreement',
       },
       {
-        path: '/admin/sub-page',
-        name: 'sub-page',
-        component: './Admin',
+        path: '/cost/material',
+        name: '材料费管理',
+        component: './CostManage/Material',
+      },{
+        path: '/cost/wages',
+        name: '工费管理',
+        component: './CostManage/Wages',
       },
     ],
   },

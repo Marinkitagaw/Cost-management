@@ -37,10 +37,17 @@ export default [
         component: './CostManage/Agreement',
       },
       {
+        path: '/cost/agreement/:id/info',
+        name: '合同详情',
+        component: './CostManage/Agreement/Info',
+        hideInMenu: true,
+      },
+      {
         path: '/cost/material',
         name: '材料费管理',
         component: './CostManage/Material',
-      },{
+      },
+      {
         path: '/cost/wages',
         name: '工费管理',
         component: './CostManage/Wages',
@@ -63,4 +70,3 @@ export default [
     component: './404',
   },
 ];
-
